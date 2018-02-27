@@ -245,23 +245,27 @@ body {
 }
 
 .prelude > h1 {
-  width: 690px;
+  max-width: 690px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
   color: #fff;
   font-size: 48px;
   font-weight: 400;
-  margin-bottom: 15px;
 }
 
 .prelude-lyric {
-  width: 690px;
+  max-width: 690px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
   font-size: 18px;
   font-style: italic;
   color: #fff;
-  margin-bottom: 14px;
 }
 
 .prelude-info {
@@ -274,9 +278,7 @@ body {
 }
 
 .entries-item-opinion {
-  width: 690px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 690px;
   background: #f75e5e;
   color: #fff;
   text-align: left;
@@ -290,6 +292,8 @@ body {
   padding-right: 22px;
   margin-top: 18px;
   margin-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .entries-item-opinion > p {
@@ -311,13 +315,15 @@ footer {
 }
 
 footer > p {
-  width: 690px;
+  max-width: 690px;
   margin-left: auto;
   margin-right: auto;
-  color: #aaa;
-  font-size: 14px;
   padding-top: 0;
   padding-bottom: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #aaa;
+  font-size: 14px;
 }
 
 footer a {
