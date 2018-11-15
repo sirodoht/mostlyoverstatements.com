@@ -1,3 +1,8 @@
-baseURL = "http://example.org/"
+baseURL = "https://mostlyoverstatements.com/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Mostly Overstatements"
+theme = "hyperbole"
+paginate = 1
+
+[params]
+    description = "a Music blog"
