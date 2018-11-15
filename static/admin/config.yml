@@ -6,7 +6,6 @@ public_folder: "/images"
 slug:
   encoding: "ascii"
   clean_accents: true
-logo_url: https://mostlyoverstatements.com/logo.svg
 
 collections:
   - name: "posts"
