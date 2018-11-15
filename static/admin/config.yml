@@ -9,6 +9,9 @@ collections:
     label: "Posts"
     folder: "content/posts"
     create: true
+    slug:
+      encoding: "ascii"
+      clean_accents: true
     fields:
     - {label: "Title", name: "title", widget: "string"}
     - {label: "Date", name: "date", widget: "datetime"}
