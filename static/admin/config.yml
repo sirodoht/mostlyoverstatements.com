@@ -10,7 +10,7 @@ collections:
     folder: "content/posts"
     create: true
     fields:
-  - {label: "Title", name: "title", widget: "string"}
-  - {label: "Date", name: "date", widget: "datetime"}
-  - {label: "YouTube ID", name: "youtubeId", widget: "string"}
-  - {label: "Body", name: "body", widget: "markdown"}
+    - {label: "Title", name: "title", widget: "string"}
+    - {label: "Date", name: "date", widget: "datetime"}
+    - {label: "YouTube ID", name: "youtubeId", widget: "string"}
+    - {label: "Body", name: "body", widget: "markdown"}
