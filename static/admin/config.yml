@@ -6,6 +6,7 @@ public_folder: "/images"
 slug:
   encoding: "ascii"
   clean_accents: true
+logo_url: "https://s3-eu-central-1.amazonaws.com/sirodoht/logo-horizontal.png"
 
 collections:
   - name: "posts"
