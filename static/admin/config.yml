@@ -1,16 +1,16 @@
 backend:
-    name: git-gateway
+  name: git-gateway
 publish_mode: editorial_workflow
 media_folder: "static/images"
 public_folder: "/images"
 
 collections:
-    - name: "posts"
-        label: "Posts"
-        folder: "content/posts"
-        create: true
-        fields:
-        - {label: "Title", name: "title", widget: "string"}
-        - {label: "Date", name: "date", widget: "datetime"}
-        - {label: "YouTube ID", name: "youtubeId", widget: "string"}
-        - {label: "Body", name: "body", widget: "markdown"}
+  - name: "posts"
+  label: "Posts"
+  folder: "content/posts"
+  create: true
+  fields:
+  - {label: "Title", name: "title", widget: "string"}
+  - {label: "Date", name: "date", widget: "datetime"}
+  - {label: "YouTube ID", name: "youtubeId", widget: "string"}
+  - {label: "Body", name: "body", widget: "markdown"}
