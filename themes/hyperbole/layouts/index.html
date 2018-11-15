@@ -1,0 +1,38 @@
+{{ define "main" }}
+
+<main class="entries">
+    {{ range (.Paginate .Pages).Pages }}
+        <div class="entries-item">
+            <div class="entries-item-video">
+                <iframe width="690" height="380" src="https://www.youtube.com/embed/{{ .Params.YoutubeId }}"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <div class="entries-item-opinion">
+                {{ .Content }}
+                <a href="{{ .Permalink }}" class="entries-item-opinion-date">
+                    <time datetime="{{ .Date }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+                </a>
+            </div>
+        </div>
+    {{ end }}
+</main>
+
+<div class="pagination">
+    <div class="pagination-body">
+        <div class="paginator-body-prev">
+            {{ if .Paginator.HasPrev }}
+                <a href="{{ .Paginator.Prev.URL }}">← Newer</a>
+            {{ end }}
+        </div>
+
+        <div class="pagination-body-current">{{ .Paginator.PageNumber }}</div>
+
+        <div class="pagination-body-next">
+            {{ if .Paginator.HasNext }}
+                <a href="{{ .Paginator.Next.URL }}">Older →</a>
+            {{ end }}
+        </div>
+    </div>
+</div>
+
+{{ end }}

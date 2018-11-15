@@ -1,0 +1,16 @@
+{{ define "main" }}
+
+<main class="entry">
+    <div class="entry-video">
+        <iframe width="690" height="380" src="https://www.youtube.com/embed/{{ .Params.YoutubeId }}"
+            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div class="entry-opinion">
+        {{ .Content }}
+        <a href="{{ .Permalink }}" class="entry-opinion-date">
+            <time datetime="{{ .Date }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+        </a>
+    </div>
+</main>
+
+{{ end }}

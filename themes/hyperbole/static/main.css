@@ -1,0 +1,355 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    display: block;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+a {
+    background-color: transparent;
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+img {
+    border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal;
+}
+
+progress {
+    vertical-align: baseline;
+}
+
+textarea {
+    overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+details {
+    display: block;
+}
+
+summary {
+    display: list-item;
+}
+
+template {
+    display: none;
+}
+
+[hidden] {
+    display: none;
+}
+
+/* main */
+html,
+body {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+    font-size: 16px;
+}
+
+.prelude {
+    background: #f75e5e;
+    padding-top: 90px;
+    margin-bottom: 20px;
+}
+
+.prelude a {
+    text-decoration: none;
+}
+
+.prelude h1 {
+    max-width: 690px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #fff;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.prelude-tagline {
+    max-width: 690px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+    font-style: italic;
+    color: #fff;
+}
+
+.prelude-separator {
+    background: #eb5757;
+    height: 30px;
+}
+
+.entries-item {
+    text-align: center;
+}
+
+.entries-item-opinion {
+    max-width: 690px;
+    background: #f75e5e;
+    color: #fff;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.33;
+    box-sizing: border-box;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 22px;
+    padding-right: 22px;
+    margin-top: 18px;
+    margin-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.entries-item-opinion > p {
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+.entries-item-opinion-date {
+    display: block;
+    font-size: 13px;
+    color: #fff;
+    text-align: right;
+    text-decoration: none;
+    letter-spacing: -1px;
+}
+
+.entry {
+    text-align: center;
+}
+
+.entry-opinion {
+    max-width: 690px;
+    background: #f75e5e;
+    color: #fff;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.33;
+    box-sizing: border-box;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 22px;
+    padding-right: 22px;
+    margin-top: 18px;
+    margin-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.entry-opinion > p {
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+.entry-opinion-date {
+    display: block;
+    font-size: 13px;
+    color: #fff;
+    text-align: right;
+    text-decoration: none;
+    letter-spacing: -1px;
+}
+
+.pagination-body {
+    max-width: 690px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.pagination-body-current {
+    color: #3c2f2f;
+    text-align: center;
+}
+
+.pagination-body-prev {
+    text-align: left;
+}
+
+.pagination-body-next {
+    text-align: right;
+}
+
+.pagination-body a {
+    color: #f75e5e;
+    text-decoration: none;
+}
+
+.pagination-body a:visited {
+    color: #3c2f2f;
+}
+
+footer {
+    background: #3c2f2f;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer > p {
+    max-width: 690px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #aaa;
+    font-size: 14px;
+}
+
+footer a {
+    color: #aaa;
+}

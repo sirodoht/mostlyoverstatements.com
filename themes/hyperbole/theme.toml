@@ -1,0 +1,10 @@
+name = "Hyperbole"
+license = "MIT"
+licenselink = "https://github.com/sirodoht/mostlyoverstatements.com/blob/master/LICENSE"
+description = "Theme for the Mostly Overstatements blog"
+homepage = "https://mostlyoverstatements.com/"
+min_version = "0.41"
+
+[author]
+    name = "sirodoht"
+    homepage = "https://sirodoht.com/"
