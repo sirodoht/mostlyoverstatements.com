@@ -198,6 +198,11 @@ main {
     padding-right: 10px;
 }
 
+ul {
+    line-height: 1.5;
+    padding-left: 20px;
+}
+
 .error {
     color: #3c2f2f;
     margin-bottom: 36px;
