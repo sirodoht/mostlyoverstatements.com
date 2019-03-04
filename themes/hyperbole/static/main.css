@@ -276,10 +276,12 @@ ul {
 }
 
 .entries-item-opinion-date {
-    display: block;
+    text-align: right;
+}
+
+.entries-item-opinion-date a {
     font-size: 13px;
     color: #fff;
-    text-align: right;
     text-decoration: none;
     letter-spacing: -1px;
 }
