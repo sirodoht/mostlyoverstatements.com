@@ -2,7 +2,7 @@ baseURL = "https://mostlyoverstatements.com/"
 languageCode = "en-us"
 title = "Mostly Overstatements"
 theme = "hyperbole"
-paginate = 3
+paginate = 5
 
 [params]
     description = "a Music blog"
