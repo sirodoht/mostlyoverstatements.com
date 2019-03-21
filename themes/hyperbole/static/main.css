@@ -323,6 +323,32 @@ ul {
     letter-spacing: -1px;
 }
 
+.list ul {
+    list-style-type: none;
+    padding-left: 16px;
+    line-height: 32px;
+}
+
+.list ul li:before {
+    content: '\2013';
+    position: absolute;
+    margin-left: -16px;
+}
+
+.list a {
+    text-decoration: none;
+}
+
+.list a:hover {
+    text-decoration: underline;
+}
+
+.list time {
+    font-size: 13px;
+    color: #3c2f2f;
+    opacity: 0.6;
+}
+
 .pagination-body {
     max-width: 690px;
     margin-left: auto;
@@ -358,22 +384,37 @@ ul {
 
 footer {
     background: #3c2f2f;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-footer > p {
-    max-width: 690px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-left: 10px;
-    padding-right: 10px;
     color: #aaa;
     font-size: 14px;
 }
 
 footer a {
     color: #aaa;
+}
+
+.footer-content {
+    display: flex;
+    max-width: 690px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.footer-content-left {
+    margin-right: auto;
+}
+
+.footer-content-left a {
+    text-decoration: none;
+}
+
+.footer-content-left a:hover {
+    text-decoration: underline;
+}
+
+.footer-content-left a:not(:last-child) {
+    margin-right: 12px;
 }
