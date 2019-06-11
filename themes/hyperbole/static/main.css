@@ -273,6 +273,7 @@ ul {
 .entries-item-opinion > p {
     margin-top: 0;
     margin-bottom: 18px;
+    word-wrap: break-word;
 }
 
 .entries-item-opinion-date {
