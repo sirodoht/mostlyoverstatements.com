@@ -1,15 +1,15 @@
 {{ define "main" }}
 
 <main class="entry">
+    <h2>{{ .Title }}</h2>
     <div class="entry-video">
-        <iframe width="690" height="380" src="https://www.youtube.com/embed/{{ .Params.YoutubeId }}"
-            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-        </iframe>
+        <div data-id="{{ .Params.YoutubeId }}" class="entries-item-video-placeholder">
+            <img src="https://i.ytimg.com/vi/{{ .Params.YoutubeId }}/hqdefault.jpg" alt="video thumbnail">
+        </div>
     </div>
-    <div class="entry-opinion">
-        {{ .Content }}
-        <a href="{{ .Permalink }}" class="entry-opinion-date">
-            <time datetime="{{ .Date }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+    <div class="entry-date">
+        <a href="{{ .Permalink }}">
+            Published on <time datetime="{{ .Date }}">{{ .Date.Format "January 2, 2006" }}</time>
         </a>
     </div>
 </main>
