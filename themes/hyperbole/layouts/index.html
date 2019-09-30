@@ -42,4 +42,24 @@
     </div>
 </div>
 
+<script>
+    const videoElems = document.querySelectorAll('.entries-item-video-placeholder');
+    for (const elem of videoElems) {
+        elem.addEventListener('click', function (ev) {
+            const imageElem = ev.target;
+            const parentElem = ev.target.parentNode;
+            const youtubeId = ev.target.parentNode.dataset.id;
+            const iframeElem = document.createElement('iframe');
+            iframeElem.width = 690;
+            iframeElem.height = 380;
+            iframeElem.src = 'https://www.youtube.com/embed/' + youtubeId + '?autoplay=1';
+            iframeElem.frameBorder = 0;
+            iframeElem.allow = 'autoplay; encrypted-media';
+            iframeElem.allowFullscreen = true;
+            imageElem.style.display = 'none';
+            parentElem.appendChild(iframeElem);
+        })
+    }
+</script>
+
 {{ end }}
