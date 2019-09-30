@@ -3,18 +3,22 @@
 <main class="entries">
     {{ range (.Paginate .Pages).Pages }}
         <div class="entries-item">
+            <h2>{{ .Title }}</h2>
             <div class="entries-item-video">
-                <iframe width="690" height="380" src="https://www.youtube.com/embed/{{ .Params.YoutubeId }}"
+
+                <div data-id="{{ .Params.YoutubeId }}" class="entries-item-video-placeholder">
+                    <img src="https://i.ytimg.com/vi/{{ .Params.YoutubeId }}/hqdefault.jpg" alt="video thumbnail">
+                    <!-- <img src="https://img.youtube.com/vi/{{ .Params.YoutubeId }}/maxresdefault.jpg" alt="video thumbnail"> -->
+                </div>
+
+                <!-- <iframe width="690" height="380" src="https://www.youtube.com/embed/{{ .Params.YoutubeId }}"
                     frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-                </iframe>
+                </iframe> -->
             </div>
             <div class="entries-item-opinion">
-                {{ .Content }}
-                <div class="entries-item-opinion-date">
-                    <a href="{{ .Permalink }}">
-                        <time datetime="{{ .Date }}">{{ .Date.Format "Jan 2, 2006" }}</time>
-                    </a>
-                </div>
+                <a href="{{ .Permalink }}">
+                    Published on <time datetime="{{ .Date }}">{{ .Date.Format "January 2, 2006" }}</time>
+                </a>
             </div>
         </div>
     {{ end }}
