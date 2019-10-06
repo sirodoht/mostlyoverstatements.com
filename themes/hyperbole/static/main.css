@@ -253,6 +253,7 @@ ul {
 
 .entries-item-video-placeholder img {
     width: 100%;
+    cursor: pointer;
 }
 
 .entries-item-date {
