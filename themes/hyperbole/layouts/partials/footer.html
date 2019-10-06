@@ -47,6 +47,10 @@
                 const iframeElem = document.createElement('iframe');
                 iframeElem.width = 690;
                 iframeElem.height = 380;
+                if (window.screen.width < 690) {
+                    iframeElem.width = window.screen.width - 20;
+                    iframeElem.height = window.screen.height / 2.5;
+                }
                 iframeElem.src = 'https://www.youtube.com/embed/' + youtubeId + '?autoplay=1';
                 iframeElem.frameBorder = 0;
                 iframeElem.allow = 'autoplay; encrypted-media';
